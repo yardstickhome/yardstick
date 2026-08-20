@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Yardstick",
+        "description": "Enter the address of the computer running Yardstick on your network.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Yardstick found",
+        "description": "Set up the Yardstick at {host}? It will bring your Yarbo into Home Assistant."
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach Yardstick at that address. Check that it is running and on the same network.",
+      "licence": "This Yardstick needs an active licence to feed Home Assistant."
+    },
+    "abort": {
+      "already_configured": "This Yardstick is already set up."
+    }
+  }
+}

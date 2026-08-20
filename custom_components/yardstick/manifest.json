@@ -1,0 +1,13 @@
+{
+  "domain": "yardstick",
+  "name": "Yardstick",
+  "codeowners": ["@yardstickhome"],
+  "config_flow": true,
+  "documentation": "https://yardstickhome.com/support/",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/yardstickhome/yardstick/issues",
+  "requirements": [],
+  "version": "0.2.0",
+  "zeroconf": ["_yardstick._tcp.local."]
+}
