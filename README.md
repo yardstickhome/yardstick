@@ -1,9 +1,12 @@
 # Yardstick — Home Assistant integration
 
-Brings your Yarbo into Home Assistant as a first-class **Yardstick** integration
-— its own name and logo, auto-discovered, no cloud, no Yarbo account, nothing
-that reaches the internet. It talks only to Yardstick running on your own
-network, which in turn reads the robot locally.
+Brings your Yarbo into Home Assistant as a first-class **Yardstick** integration,
+with its own name and logo, discovered automatically. It talks only to Yardstick
+running on your own network. Yardstick in turn reaches the robot through your
+Yarbo account, the same way the Yarbo app does, so it needs Yardstick signed in
+and online. (A Yarbo firmware update in September 2026 closed the local
+connection Yardstick used to make, which is why earlier versions of this page
+said "no cloud".)
 
 ## What you get
 

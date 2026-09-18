@@ -1,7 +1,8 @@
 # Yardstick for Home Assistant — beta tester guide
 
-This connects your Yarbo to Home Assistant through Yardstick, entirely on your
-own network. No Yarbo account, no cloud. You get live readings, and (if you
+This connects your Yarbo to Home Assistant through Yardstick. Home Assistant talks
+to Yardstick on your own network; Yardstick reaches the robot through your Yarbo
+account. You get live readings, and (if you
 choose) full control: start a plan, pause, dock, blades, lights, and more.
 
 ## Before you start
