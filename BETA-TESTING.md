@@ -3,7 +3,7 @@
 This connects your Yarbo to Home Assistant through Yardstick. Home Assistant talks
 to Yardstick on your own network; Yardstick reaches the robot through your Yarbo
 account. You get live readings, and (if you
-choose) full control: start a plan, pause, dock, blades, lights, and more.
+choose) control: start a plan, pause, resume, dock, stop, lights, and more.
 
 ## Before you start
 
@@ -53,8 +53,14 @@ You will have:
 - **Mower** (`lawn_mower.yarbo`): Start, Pause, Dock
 - **Plan** selector: which saved plan "Start" runs
 - **Buttons:** Send home, Pause, Resume, Stop, Find (sound)
-- **Switches:** Blades, Lights, Camera
-- **Numbers:** Blower speed, Blade height, Head lift, Chute angle
+- **Switches:** Lights, Camera
+- **Numbers:** Blade height, Head lift, Chute angle
+
+The Blades switch and Blower speed slider were removed in 0.2.2. Yardstick now
+reaches the robot through your Yarbo account, so the command that stops them
+travels over the internet and could arrive late. Yardstick refuses both from
+Home Assistant. If you are updating from an earlier version, the two old
+entities show as unavailable and can be deleted.
 
 To put a control card on a dashboard: Overview → ⋮ **Edit dashboard** → **+ Add
 card** → search **Yarbo** → add the mower entity (and the Plan selector next to it).

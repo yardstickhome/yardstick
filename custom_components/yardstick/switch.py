@@ -27,10 +27,10 @@ class YardstickSwitchDescription(SwitchEntityDescription):
     state_key: str | None = None
 
 
+# No Blades switch (removed in 0.2.2). Yardstick reaches the robot through the
+# owner's Yarbo account, so the command that stops the blades crosses the
+# internet and could arrive late. Yardstick refuses it from Home Assistant.
 SWITCHES: tuple[YardstickSwitchDescription, ...] = (
-    YardstickSwitchDescription(
-        key="blades", name="Blades", icon="mdi:fan",
-        action="blades", state_key="blades"),
     YardstickSwitchDescription(
         key="lights", name="Lights", icon="mdi:car-light-high", action="lights"),
     YardstickSwitchDescription(

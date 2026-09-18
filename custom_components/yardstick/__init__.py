@@ -1,8 +1,9 @@
-"""The Yardstick integration — your Yarbo in Home Assistant, entirely local.
+"""The Yardstick integration: your Yarbo in Home Assistant, through Yardstick.
 
-Yardstick runs on your own network, reads the robot over its own local protocol,
-and this integration reads Yardstick. No Yarbo account, no cloud, nothing to
-reach the internet for.
+Yardstick runs on your own network and this integration reads Yardstick, so the
+hop Home Assistant makes is local. Yardstick itself reaches the robot through the
+owner's Yarbo account: a Yarbo firmware update in September 2026 closed the
+robot's local broker, and with it the "no account, no cloud" this used to say.
 """
 
 from __future__ import annotations

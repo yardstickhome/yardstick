@@ -26,12 +26,10 @@ class YardstickNumberDescription(NumberEntityDescription):
     state_key: str | None = None
 
 
+# No Blower speed slider (removed in 0.2.2), for the same reason as the Blades
+# switch: the command that stops it now travels through the owner's Yarbo
+# account and could arrive late, so Yardstick refuses it from Home Assistant.
 NUMBERS: tuple[YardstickNumberDescription, ...] = (
-    YardstickNumberDescription(
-        key="blower", name="Blower speed", icon="mdi:weather-windy",
-        action="blower", param_key="vel", state_key="blower",
-        native_min_value=0, native_max_value=2000, native_step=50,
-        mode=NumberMode.SLIDER),
     YardstickNumberDescription(
         key="blade_height", name="Blade height", icon="mdi:arrow-expand-vertical",
         action="blade-height", native_min_value=0, native_max_value=100,
